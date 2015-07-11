@@ -28,10 +28,12 @@ Also IP masquerade Setting used to internet.
 
 이 쉘 파일은 hostapd와 isc-dhcp-server를 설치하고
 9개의 설정파일을 변경합니다. 아래 9개의 설정파일이 있습니다.
+
 /etc/default/hostapd, /etc/default/ifplugd, /etc/default/isc-dhcp-server, /etc/dhcp/dhcpd.conf 
 /etc/hostapd/hostapd.conf, /etc/iptables.ipv4.nat, /etc/network/interfaces, /etc/sysctl.conf, /proc/sys/net/ipv4/ip_forward
 
-그리고 http://adafruit-download.s3.amazonaws.com/adafruit_hostapd_14128.zip을 다운받아서 기존에 있는 hostapd와 바꿔주게 됩니다.  이는 무선랜 카드와 호환을 위함입니다.
+그리고 http://adafruit-download.s3.amazonaws.com/adafruit_hostapd_14128.zip을 다운받아서 
+기존에 있는 hostapd와 바꿔주게 됩니다.  이는 무선랜 카드와 호환을 위함입니다.
 
 마지막으로 hostapd, isc-dhcp-server를 시작하게 되고 
 DNS 서버를 다시 세팅한 뒤 IP 마스커레이드를 적용합니다. 
